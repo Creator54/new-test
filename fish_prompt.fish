@@ -5,6 +5,7 @@ function _is_git_dirty
 end
 
 function fish_prompt
+  clear
   set_color -o red
   printf ' |'
   set_color -o blue

@@ -7,7 +7,7 @@ end
 function fish_prompt
   clear
   set_color -o red
-  printf ' |'
+  printf '\n  |'
   set_color -o blue
   printf '%s' (hostname|cut -d . -f 1)
   set_color -o red
@@ -20,9 +20,9 @@ function fish_prompt
   printf '%s' (prompt_pwd)
 
   echo
-  echo && ls -lah |xargs -i echo "  {}" && echo
+  echo && ls -lah |xargs -i echo "    {}" && echo
   set_color -o red
-  printf ' :'
+  printf '  : '
   set_color -o yellow
   printf '%s' (__fish_git_prompt)
   if [ (_is_git_dirty) ]

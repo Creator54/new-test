@@ -1,6 +1,6 @@
 # MZish
 
-Based on Zhishen Wen's Zish
+Build up on Zhishen Wen's Zish
 
 ![mzish](./mzish_preview.png)
 
